@@ -1,4 +1,3 @@
-<?php
 $botToken = "7295049618:AAE35fuzIS7vIXMVYfsQy30RtQXXHVHKxHU";
 $ownerID = "7113416108";
 
@@ -129,5 +128,3 @@ Reason: $skmsg
         sendMessage($chatId,$skmsg,$messageId);
     }
 }
-
-?>
