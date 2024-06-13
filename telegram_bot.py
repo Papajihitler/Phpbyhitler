@@ -47,7 +47,7 @@ def main():
     application = Application.builder().token("7122838146:AAFSbDgukcfPTgMWL_pZ5TQ0DtJTRiv_suQ").build()
 
     # Add the /start command handler
-    application.add_handler(CommandHandler("start", check))
+    application.add_handler(CommandHandler("check", check))
 
     # Run the bot
     application.run_polling()
