@@ -27,7 +27,7 @@ def check_proxy(proxy):
         pass
     return False
 
-# Command handler for /start
+# Command handler for /check
 async def check(update: Update, context: CallbackContext) -> None:
     if len(context.args) != 1:
         await update.message.reply_text("Usage: /check <ip:port:username:password>")
