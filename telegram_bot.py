@@ -38,7 +38,7 @@ async def check(update: Update, context: CallbackContext) -> None:
     if check_proxy(proxy):
         status_message = f"⊙ Status: Live ✅\n⊙ Proxy: {proxy}\n\nDev ~ @HitlerxPapaa⚡️"
     else:
-        status_message = f"⊙ Status: Dead ❌\n⊙ Proxy: {proxy}\n\nDev ~ @HitlerxPapaa"
+        status_message = f"⊙ Status: Dead ❌\n⊙ Proxy: {proxy}\n\nDev ~ @HitlerxPapaa⚡️"
 
     await update.message.reply_text(status_message)
 
@@ -46,7 +46,7 @@ def main():
     # Replace 'YOUR_TOKEN' with your actual bot token
     application = Application.builder().token("7122838146:AAFSbDgukcfPTgMWL_pZ5TQ0DtJTRiv_suQ").build()
 
-    # Add the /start command handler
+    # Add the /check command handler
     application.add_handler(CommandHandler("check", check))
 
     # Run the bot
